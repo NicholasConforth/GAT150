@@ -28,8 +28,8 @@ namespace nc
 		void ReadGameObjects(const rapidjson::Value& value);
 		void ReadPrototypes(const rapidjson::Value& value);
 
-	protected:
 		Engine* m_engine{ nullptr };
+	protected:
 		std::list<GameObject*> m_gameObjects;
 	};
 }

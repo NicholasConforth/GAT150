@@ -12,8 +12,8 @@ namespace nc
 		bool Create(const std::string& name, void* renderer) override;
 		void Destroy() override;
 
-		void Draw(const Vector2& position, float angle, const Vector2& scale, const Vector2& origin);
-		void Draw(const SDL_Rect& source, const Vector2& position, float angle, const Vector2& scale, const Vector2& origin );
+		void Draw(const Vector2& position, float angle, const Vector2& scale, const Vector2& origin, bool flip = false);
+		void Draw(const SDL_Rect& source, const Vector2& position, float angle, const Vector2& scale, const Vector2& origin, bool flip = false);
 		Vector2 GetSize();
 	private:
 		SDL_Texture* m_texture{ nullptr };

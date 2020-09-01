@@ -10,6 +10,7 @@
 namespace nc
 {
 	class Component;
+	class Scene;
 
 	class GameObject : public Object
 	{
@@ -66,6 +67,7 @@ namespace nc
 		float m_lifetime{ 0 };
 		Transform m_transform;
 		Engine* m_engine{ nullptr };
+		Scene* m_scene{ nullptr };
 	protected:
 		std::vector<Component*> m_components;
 		std::list<GameObject*> m_contacts;

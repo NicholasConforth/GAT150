@@ -149,6 +149,9 @@
     <ClInclude Include="Components\SpriteComponent.h">
       <Filter>Components</Filter>
     </ClInclude>
+    <ClInclude Include="Core\EventManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp">
@@ -226,10 +229,8 @@
     <ClCompile Include="Components\AudioComponent.cpp">
       <Filter>Components</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\Build\Scene.txt">
-      <Filter>Source Files</Filter>
-    </Text>
+    <ClCompile Include="Core\EventManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

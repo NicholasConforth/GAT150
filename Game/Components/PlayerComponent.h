@@ -9,5 +9,8 @@ namespace nc
 		virtual void Destroy() override;
 		virtual Object* Clone() override { return new PlayerComponent{ *this }; }
 		virtual void Update() override;
+
+		void CollisionEnter(const Event& event);
+		void CollisionExit(const Event& event);
 	};
 }

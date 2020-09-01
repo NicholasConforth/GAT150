@@ -143,7 +143,7 @@ namespace nc
 					if (gameObject)
 					{
 						// call game object create, pass in m_engine
-						gameObject->Create(m_engine);
+						gameObject->Create(this);
 						// call game object read
 						gameObject->Read(objectValue);
 						// add game object to scene
@@ -167,7 +167,7 @@ namespace nc
 				GameObject* gameObject = nc::ObjectFactory::Instance().Create<nc::GameObject>(typeName);
 				if (gameObject)
 				{
-					gameObject->Create(m_engine);
+					gameObject->Create(this);
 					gameObject->Read(objectValue);
 					std::cout << gameObject->m_name << std::endl;
 
