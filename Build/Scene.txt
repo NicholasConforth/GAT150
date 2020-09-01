@@ -15,7 +15,7 @@
       "Components": [
         {
           "type": "SpriteAnimationComponent",
-          "texture": "explosion.png",
+          "texture": "Textures/explosion.png",
           "origin": [
             0.5,
             0.5
@@ -41,7 +41,7 @@
       "Components": [
         {
           "type": "SpriteAnimationComponent",
-          "texture": "coin.png",
+          "texture": "Textures/coin.png",
           "origin": [
             0.5,
             0.5
@@ -184,6 +184,45 @@
           "density": 1,
           "friction": 1,
           "restitution": 0.1
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "tag": "Floor",
+      "name": "Tile02",
+      "position": [
+        400,
+        450
+      ],
+      "scale": 1,
+      "angle": 0,
+      "Components": [
+        {
+          "type": "SpriteComponent",
+          "texture": "Textures/Tile02.png",
+          "origin": [
+            0.5,
+            0.5
+          ],
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ]
+        },
+        {
+          "type": "RigidBodyComponent",
+          "isDynamic": false,
+          "lockAngel": false,
+          "size": [
+            32,
+            32
+          ],
+          "density": 1,
+          "friction": 1,
+          "restitution": 3.0
         }
       ]
     }
